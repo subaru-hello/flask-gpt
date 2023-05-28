@@ -5,14 +5,13 @@ description = "Add a short description here"
 authors = [
     { name = "subaru-hello", email = "octpsubaru@icloud.com" }
 ]
-dependencies = []
+dependencies = ["flask~=2.3.2"]
 readme = "README.md"
 requires-python = ">= 3.8"
 
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling","setuptools", "wheel", "flask"]
 build-backend = "hatchling.build"
-
 [tool.rye]
 managed = true
 [tool.hatch.metadata]
